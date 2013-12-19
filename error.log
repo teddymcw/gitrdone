@@ -1,0 +1,249 @@
+2013-12-05 13:08:33,861 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-05 13:09:59,485 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-05 13:10:06,813 ERROR: Exception on /register/ [POST] [in /Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/taskr/views.py", line 38, in register
+    db.session.add(new_user)
+UnboundLocalError: local variable 'new_user' referenced before assignment
+2013-12-05 13:34:26,010 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-05 13:37:13,726 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-05 13:38:28,103 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-05 13:41:21,751 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-05 13:42:11,481 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-05 13:43:10,092 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-05 13:52:57,270 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-05 13:53:27,556 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-05 13:53:44,282 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-05 14:26:41,349 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-05 16:01:20,283 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-06 17:01:00,017 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-06 17:01:35,665 ERROR: Exception on /register/ [GET] [in /Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/taskr/views.py", line 41, in register
+    db.session.add(new_user)
+UnboundLocalError: local variable 'new_user' referenced before assignment
+2013-12-06 17:01:45,385 ERROR: Exception on /register/ [GET] [in /Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/taskr/views.py", line 41, in register
+    db.session.add(new_user)
+UnboundLocalError: local variable 'new_user' referenced before assignment
+2013-12-06 17:01:52,117 ERROR: Exception on /register/ [GET] [in /Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/taskr/views.py", line 41, in register
+    db.session.add(new_user)
+UnboundLocalError: local variable 'new_user' referenced before assignment
+2013-12-06 17:03:28,152 ERROR: Exception on /add/ [POST] [in /Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/taskr/views.py", line 23, in wrap
+    return test(*args, **kwargs)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/taskr/views.py", line 97, in new_task
+    session['user_id']
+TypeError: __init__() takes 5 positional arguments but 7 were given
+2013-12-09 12:42:46,898 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-09 12:43:12,266 ERROR: Exception on /register/ [GET] [in /Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/taskr/views.py", line 41, in register
+    db.session.add(new_user)
+UnboundLocalError: local variable 'new_user' referenced before assignment
+2013-12-16 15:23:44,423 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 15:24:22,232 ERROR: Exception on /register/ [GET] [in /Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/taskr/views.py", line 41, in register
+    db.session.add(new_user)
+UnboundLocalError: local variable 'new_user' referenced before assignment
+2013-12-16 15:25:23,822 ERROR: Exception on /register/ [GET] [in /Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/taskr/views.py", line 41, in register
+    db.session.add(new_user)
+UnboundLocalError: local variable 'new_user' referenced before assignment
+2013-12-16 15:27:28,813 ERROR: Exception on /register/ [GET] [in /Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/taskr/views.py", line 41, in register
+    db.session.add(new_user)
+UnboundLocalError: local variable 'new_user' referenced before assignment
+2013-12-16 15:28:39,353 ERROR: Exception on /register/ [GET] [in /Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/taskr/views.py", line 41, in register
+    db.session.add(new_user)
+UnboundLocalError: local variable 'new_user' referenced before assignment
+2013-12-16 15:28:43,429 ERROR: Exception on /register/ [GET] [in /Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/taskr/views.py", line 41, in register
+    db.session.add(new_user)
+UnboundLocalError: local variable 'new_user' referenced before assignment
+2013-12-16 15:34:42,043 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 15:34:42,354 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 15:39:35,667 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 15:39:38,014 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 15:42:16,448 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 15:51:05,208 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 15:51:05,514 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 16:02:51,110 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 16:15:56,004 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 16:16:15,474 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 16:18:24,692 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 16:18:46,177 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 16:19:33,841 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 16:27:55,956 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 16:31:19,080 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 16:31:49,827 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 16:32:07,656 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 16:44:45,879 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 17:04:26,523 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 17:04:59,560 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 17:05:12,856 ERROR: Exception on /register/ [GET] [in /Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2013-12-16 18:52:41,964 ERROR: Exception on /register/ [GET] [in /Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/Users/me/Documents/Py/explore_flask/venvtaskr/lib/python3.3/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2013-12-16 19:00:40,073 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 19:00:40,379 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 19:05:20,690 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-16 19:05:31,373 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-17 20:37:42,500 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]
+2013-12-18 20:57:20,572 INFO: errors [in /Users/me/Documents/Py/explore_flask/venvtaskr/taskr/__init__.py:21]

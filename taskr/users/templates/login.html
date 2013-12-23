@@ -1,0 +1,16 @@
+{% extends "template.html" %}
+
+{% block content %}
+<div class="jumbo">
+  <h2>What needs to be</h2>
+  <h3>Please login to access your list</h3>
+  <form method="post" action="">
+  	<p>
+  	  {{ form.name.label }}: {{ form.name }}&nbsp;&nbsp;
+  	  {{ form.password.label }}: {{ form.password }}&nbsp;&nbsp;
+  	  <input type="submit" value="Submit" class="btn-primary">
+  	</p>
+  </form>
+  <p><em>Need an account? </em><a href="/register">Signup!!</a></p>
+</div>
+{% endblock %}

@@ -1,0 +1,113 @@
+{% extends "template.html" %}
+{% block content %}
+  <h1> Git'r'Done Page </h1>
+  <a href="/logout">Logout</a>
+  <div class="add-task">
+    <h3> Add a new task </h3>
+
+    <form method="POST" action="{{ url_for('new_task') }}">
+	  <table>
+	    <tr>
+	      <td> {{ form.name.label }}: {{ form.name }} </td>> 
+        <td> {{ form.amount.label }}: {{ form.amount }}&nbsp; </td>>
+	  	  <td> {{ form.due_date.label }}: {{ form.due_date }}&nbsp; </td>> 
+	  	  <td> {{ form.posted_date.label }}: {{ form.posted_date }}&nbsp; </td>> 
+	  	  <td> {{ form.priority.label }}: {{ form.priority }} </td>
+	  </table>
+	  <p>
+	    <input type="submit" value="Submit" class="btn-primary">
+	  </p>
+    </form>
+    <hr>
+    <br/>
+  </div>
+<!-- Main page where focusing on the CSS and overall layout will help a lot -->
+
+
+<!-- Michael cut the "entries" div when implementing bootstrap -->
+  <div class="entries">
+  <br/>
+  <br/>
+  <h2>Open Items:</h2>
+    <div class="datagrid">
+      <table>
+        <thead>
+        <!-- Note that there is 1 more column in the "Open Items table" than the "Closed Items"-->
+          <tr>
+          <th width="300px"><strong>Item Name</strong></th>
+          <th width="50px"><strong>Amount</strong></th>
+          <th width="100px"><strong>Due Date</strong></th>
+          <th width="50px"><strong>Posted</strong></th>
+          <th width="50px"><strong>Priority</strong></th>
+          <th width="50px"><strong>Posted By</strong></th>
+<!-- Michael cut the Actions <th> when implementing bootstrap -->
+          <th width="150px"><strong>Actions</strong></th>
+          <th width="150px"><strong>Actions</strong></th>
+          </tr>
+ <!--Michael is still using the "thread" instead of <thead> in his examples I'm using <thead>-->
+        </thead>
+        {% for o in open_tasks %}
+        <!-- Very needed to get this spacing proper -->
+	        <tr>
+	        <td style="text-align: left;" width="300px"> {{ o.name }}</td>
+          <td width="50px"> {{ o.amount }}</td>
+	        <td width="100px"> {{ o.due_date }}</td>
+	        <td width="50px"> {{ o.posted_date }}</td>
+	        <td width="50px"> {{ o.priority }}</td>
+	        <td width="50px"> {{ o.poster.name }}</td>
+	        <td width="150px"> 
+	          <a href="{{ url_for('delete_entry', task_id = o.task_id) }}">Delete</a> 
+	        </td> -
+	        <td width="150px">
+	          <a href="{{ url_for('complete', task_id = o.task_id) }}">Complete</a>
+	        </td>
+	        </tr>
+        {% endfor %}
+      </table>
+    </div>
+<!--Michael isn't closing the second div tag so I am doing it for him here-->
+</div>
+
+      <br/>
+      <br/>
+
+  <div class="entries">
+  <br/>
+  <br/>
+  <h2>Closed Items:</h2>
+    <div class="datagrid">
+      <table>
+        <thead>
+          <tr>
+          <th width="300px"><strong>Item Name</strong></th>
+          <th width="50px"><strong>Amount</strong></th>
+          <th width="100px"><strong>Due Date</strong></th>
+          <th width="50px"><strong>Posted</strong></th>
+          <th width="50px"><strong>Priority</strong></th>
+          <th width="50px"><strong>Posted By</strong></th>
+          <!-- Michael left this Actions <th> in!! -->
+          <th width="300px"><strong>Actions</strong></th>
+          </tr>
+ <!--Michael is still using the "thread" instead of <thead> in his examples I'm using <thead>-->
+        </thead>
+        {% for c in closed_tasks %}
+        <!-- Michael didn't style the closed tasks at all, does it work?  -->
+	        <tr>
+	        <td style="text-align: left;" width="300px"> {{ c.name }}</td>
+          <td width="50px"> {{ c.amount }}</td>
+	        <td width="100px"> {{ c.due_date }}</td>
+	        <td width="50px"> {{ c.posted_date }}</td>
+	        <td width="50px"> {{ c.priority }}</td>
+	        <td width="50px"> {{ c.poster.name }}</td>
+	        <td> 
+	          <a href="{{ url_for('delete_entry', task_id = c.task_id) }}">Delete</a>
+	        </td>
+	        </tr>
+        {% endfor %}
+      </table>
+    </div>
+<!--Michael isn't closing the second div tag so I am doing it for him here-->
+</div>
+{% endblock %}
+
+
